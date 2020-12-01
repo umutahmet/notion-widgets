@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Widget</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+    }
+    .widget {
+      flex: 1;
+    }
+  </style>
 </head>
 <body>
-  <a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/" data-label_1="SYDNEY" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="weather_one" >SYDNEY WEATHER</a>
+  <div class="widget">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/n33d87151d21/sydney/" data-label_1="SYDNEY" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-theme="weather_one" >SYDNEY WEATHER</a>
+  </div>
+  
   <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   </script>
-</body>
+</body>978904
 </html>
